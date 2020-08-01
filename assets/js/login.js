@@ -36,7 +36,7 @@ $(function () {
             data: data,
 
             success: function (res) {
-                if (res.status != 0) {
+                if (res.status !== 0) {
                     return layer.msg(res.message)
                 }
                 layer.msg('注册成功,请登录!')
@@ -54,7 +54,7 @@ $(function () {
             url: '/api/login',
             data: $(this).serialize(),
             success: function (res) {
-                if (res.status != 0) {
+                if (res.status !== 0) {
                     return layer.msg('登录失败')
                 }
                 layer.msg('登录成功')
