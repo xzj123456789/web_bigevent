@@ -42,11 +42,5 @@ function renderAvatar(user) {
         $('.layui-nav-img').hide()
         var first = name[0].toUpperCase()
         $('.text-avatar').html(first).show()
-
-
     }
-
-
-
-
 }
